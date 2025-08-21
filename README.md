@@ -1,6 +1,6 @@
-# Repositorio Unidad \#
+# Repositorio Unidad \# 3
 ## Información del estudiante
-Nombre:  
-ID.:  
+Nombre:  Alejandro
+ID.: 000540191 
 ## Descripción del repositorio
-Reemplace estas líneas por la descripción de su repositorio
+Unidad 3

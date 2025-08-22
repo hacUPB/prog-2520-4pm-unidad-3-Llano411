@@ -42,4 +42,4 @@ Crear las siguientes tablas:
 | list      | Lista                      | [1, 2, 3]       |
 | tuple     | Tupla                      | (1, 2, 3)       |
 | dict      | Diccionario                | {"a": 1, "b": 2}|
-| set       | Conjunto                   | {1, 2,
+| set       | Conjunto                   | {1, 2, 3}       |

@@ -19,12 +19,14 @@ print ("su imc = ", imc)
 #Se hace la tabla del IMC
 
 if imc < 18.49:
-    print ("Su peso es bajo")
+    mensaje = "Su peso es bajo"
 elif 18.5 < imc < 24.9:
-    print ("Su peso es normal")
+    mensaje = "Su peso es normal"
 elif 25 < imc < 29.9:
-    print ("usted tiene sobrepeso")
+    mensaje = "usted tiene sobrepeso"
 elif 30 < imc < 39.9:
-    print ("usted tiene obesidad")
+    mensaje = "usted tiene obesidad"
 else:
-    print ("usted tiene obesidad extrema")
+    mensaje = "usted tiene obesidad extrema"
+
+print(f"{nombre}, su imc es {imc:0.2f} y su condicion es que {mensaje}")

@@ -115,3 +115,118 @@ else:
     print("la zona ingresada no existe")
 
 print(f"el envio de su paquete cuesta ${total}")
+
+#Bucles o ciclos 
+
+# Se recomienda usar el "for" cuando se sabe la cantidad de veces que se repetira el bucle y si la cantidad de repeticiones depende de una condicion se recomiendo usar "while"
+# While es una variable Boleana (true or false)
+
+# Ejemplo 1 
+numero = 1 
+while numero <= 5:
+    print(numero)
+    numero += 1     #numero = numero + 1
+
+# imprimir los numeros pares entre el 20 y el 80 
+
+numero = 20
+while 20 <= numero <= 80:
+    if numero % 2 == 0:
+        print(numero)
+    
+    numero += 1 
+
+# imprimir los impares entre 99 y 61
+
+numero = 99
+while 99 >= numero >= 61:
+    if numero % 2 != 0:
+        print(numero)
+    
+    numero -= 1
+
+# solicitar 2 numeros al usario e imprimir los numeros impares entre ellos 
+
+numero1 = int(input("ingrese un primer numero: "))
+numero2 = int(input("ingrese un segundo numero: "))
+
+if numero1 > numero2:
+    mayor = numero1
+    menor = numero2
+else:
+    mayor = numero2
+    menor = numero1 
+
+while menor <= mayor:
+    if menor % 2 == 1:
+        print(menor)
+    menor += 1 
+
+# Imprimir los multiplos de 7 entre 0 y 100
+
+Numero = 0 
+while 0 <= Numero <= 100:
+    if Numero % 7 == 0:
+        print(Numero)
+    Numero += 1
+
+# Solicitar un numero al usuario e imprimir su tabla de multiplicar hasta 15 
+
+valor = int(input("ingrese un numero: "))
+num = 1 
+while num <= 15:
+    result = valor * num
+    print (f"{num} x {valor} = {result}")
+    num += 1 
+
+# Menu 2
+
+# utilizando una variable tipo booleana -> una bandera 
+control = True 
+while control == True:
+    print("1. Entradas\n2. Platos fuertes\n3. Bebidas\n4. Postres\n5. Salir")
+    opcion = int(input("elija una opcion: "))
+    match opcion:
+        case 1: 
+            print("1. Patacon con hogao\n2. Dedos de queso\n3. Papas fritas")
+            print()
+        case 2:
+            print("1. Solomito\n2. Spaghetti napolitano\n3. tamal")
+            print()
+        case 3:
+            print("1. Cerveza\n2. Jugo natural\n3. limonadas")
+            print()
+        case 4:
+            print("1. Torta\n2. Muffin\n3. Dulce de leche")
+            print()
+        case 5: 
+            control = False
+        case _:
+            print("Opcion no valida") 
+            print()
+
+# utilizando una variable tipo booleana -> una bandera 
+# control = True 
+while True: #Bucle infinito
+    print("1. Entradas\n2. Platos fuertes\n3. Bebidas\n4. Postres\n5. Salir")
+    opcion = int(input("elija una opcion: "))
+    match opcion:
+        case 1: 
+            print("1. Patacon con hogao\n2. Dedos de queso\n3. Papas fritas")
+            print()
+        case 2:
+            print("1. Solomito\n2. Spaghetti napolitano\n3. tamal")
+            print()
+        case 3:
+            print("1. Cerveza\n2. Jugo natural\n3. limonadas")
+            print()
+        case 4:
+            print("1. Torta\n2. Muffin\n3. Dulce de leche")
+            print()
+        case 5: 
+            break
+        case _:
+            print("Opcion no valida") 
+            print()
+
+# Proxima clase traer los 3 problemas textuales que vamos a resolver 

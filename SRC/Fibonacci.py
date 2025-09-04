@@ -61,9 +61,11 @@ for i in range (0,n+1):
         acumulador += i # tipo de variable: acumulador 
 print(f"La suma de los numeros pares de 0 hasta {n} es: {acumulador}")
 '''
+'''
 numero = int(input("Ingrese un número entero: "))
 
 for i in range(1, numero + 1):
     for j in range(1, i + 1):
         print(j, end="")
     print()
+'''
